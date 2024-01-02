@@ -2,11 +2,13 @@
 <head>
     <title>Text Summarization</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/human-llm.css">
 </head>
 <body>
         <h1 id="main-header">
             Text Summarization
         </h1>
+        <!-- Open  -->
 
     <div id="task-container">
         <h2>
@@ -21,10 +23,13 @@
     </div>
 
     <div id="summary-container">
-        <h2 id="summary-instruction">
-            In the box below, summarize the Task Text to a word range of Y-Z.
-        </h2>
-        <!-- In the box below summarize your text -->
+        <div id="header">
+            <h2 id="summary-instruction">
+                In the box below, summarize the Task Text to a word range of Y-Z.
+            </h2>
+            <a href="./conversation.html" id="llm-btn" >Interact with SummarizeGPT.</a>
+        </div>
+
         <textarea id="summary"></textarea>
         <button id="summary-btn">Summarize</button>
     </div>

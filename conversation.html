@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>Text Summarization</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/conversation.css">
+</head>
+<body>
+    <h1 id="main-header">
+        Text Summarization
+    </h1>
+
+    <div id="conversation-container">
+        <div id="conversation-history">
+            <div class="conversation-message">
+                <div class="conversation-message-text">
+                    <img class="conversation-message-image" src="resources/gpt.jpg" alt="SummarizeGPT">
+                    <p>Hi, I'm SummarizeGPT. I can help you summarize text. What would you like to summarize?</p>
+                </div>
+            </div>
+            <div class="conversation-message-user">
+                <div class="conversation-message-text-user">
+                    <img class="conversation-message-image" src="resources/user.png" alt="User">
+                    <p>Hi, I would like to summarize this text: A study of young children's ability to learn foreign languages found that those with parents who read them more than one book per week in their native language were 75% more proficient in the foreign languages that they learned than the children whose parents read them one book or less per week. This study suggests that reading to children in their native language can help them learn foreign languages more quickly. However, the study did not examine whether the children who were read to more often were also read to in the foreign language. Therefore, it is possible that the children who were read to more often were simply more interested in reading and learning in general, and that this interest, rather than the reading itself, was the cause of their increased proficiency in foreign languages. In order to determine whether reading to children in their native language can help them learn foreign languages more quickly, it would be necessary to conduct a follow-up study in which children were read to in their native language and then tested on their proficiency in a foreign language...</p>
+                </div>
+            </div>
+        </div>
+        <div id="conversation-input">
+            <textarea id="conversation-input-text"></textarea>
+            <a id="conversation-input-btn">Submit</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
