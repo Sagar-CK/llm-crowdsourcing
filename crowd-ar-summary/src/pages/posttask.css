@@ -1,0 +1,23 @@
+#post-task-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 20px;
+    gap: 20px;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.questionnaire{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #d6e5e3;
+    color: #212529;
+    border-radius: 10px;
+    padding: 20px;
+    word-wrap: break-word;
+}

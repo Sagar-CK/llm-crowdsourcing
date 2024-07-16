@@ -11,12 +11,15 @@ const Layout = ({ children }) => {
         <img className="tud-logo" src={TUDLogo} alt="TU Delft" />
         <button className="revoke-consent-btn" onClick={
             () => {
-                console.log("Consent revoked");
-                navigate("/post");
+                // ensure the user wants to revoke consent
+                if (window.confirm("Are you sure you want to withdraw consent?")) {
+                    // Redirect to the revoked consent page
+                    navigate("/revoked-consent");
+                }
             }
             
         }>
-          Revoke Consent
+          Withdraw Consent
         </button>
       </nav>
       <main>{children}</main>

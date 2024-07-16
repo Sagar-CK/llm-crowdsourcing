@@ -10,6 +10,7 @@ import Task from './pages/Task';
 import PostTask from './pages/PostTask';
 import PreTask from './pages/PreTask';
 import RevokedConsent from './pages/RevokedConsent';
+import Completion from './pages/Completion';
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,14 @@ const router = createBrowserRouter([
   {
     path: "/revoked-consent",
     element: <RevokedConsent />,
+  },
+  {
+    path: "/completion",
+    element: <Completion />,
+  },
+  {
+    path: "*",
+    element: <PreTask />,
   }
 ]);
 
